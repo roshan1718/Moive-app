@@ -1,10 +1,24 @@
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import MoiveDetails from './components/MoiveDetails/MoiveDetails';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/"  exact component={Home} />
+          <Route path="/moive/:imdbID" component={MoiveDetails} />
+          <Route component={PageNotFound} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }
