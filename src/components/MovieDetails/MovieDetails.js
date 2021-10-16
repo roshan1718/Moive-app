@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MoiveDetails = () => {
+const MovieDetails = () => {
     return (
         <div>
             MoiveDetails
@@ -8,4 +8,4 @@ const MoiveDetails = () => {
     );
 };
 
-export default MoiveDetails;
+export default MovieDetails;

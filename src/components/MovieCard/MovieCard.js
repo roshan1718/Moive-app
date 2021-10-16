@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MoiveCard = () => {
+const MovieCard = () => {
     return (
         <div>
             MoiveCard
@@ -8,4 +8,4 @@ const MoiveCard = () => {
     );
 };
 
-export default MoiveCard;
+export default MovieCard;

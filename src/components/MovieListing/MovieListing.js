@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MoiveListing = () => {
+const MovieListing = () => {
     return (
         <div>
             MoiveListing
@@ -8,4 +8,4 @@ const MoiveListing = () => {
     );
 };
 
-export default MoiveListing;
+export default MovieListing;
