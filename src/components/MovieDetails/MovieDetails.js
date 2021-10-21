@@ -9,16 +9,20 @@ import {
 } from "../../fetures/movies/movieSlice";
 
 const MovieDetails = () => {
+
     const { imdbID } = useParams();
     const dispatch = useDispatch();
     const data = useSelector(getSelectedMovieOrShow);
     console.log(data);
+
     useEffect(() => {
         dispatch(fetchAsyncMovieOrShowDetail(imdbID));
         return () => {
             dispatch(removeSelectedMovieOrShow());
         };
     }, [dispatch, imdbID]);
+
+
     return (
         <div className="movie-section">
             {Object.keys(data).length === 0 ? (

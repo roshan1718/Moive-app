@@ -8,13 +8,14 @@ import MovieDetails from './components/MovieDetails/MovieDetails';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
         <Header />
         <div className="container">
         <Switch>
-          <Route path="/"  exact component={Home} />
+          <Route path="/"  exact component={Home}  />
           <Route path="/movie/:imdbID" component={MovieDetails} />
           <Route component={PageNotFound} />
         </Switch>
